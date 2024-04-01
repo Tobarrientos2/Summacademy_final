@@ -1,6 +1,8 @@
-<script >
+<script>
 	import One_Card2 from './One_Card2.svelte';
 	import One_Card from './One_Card.svelte';
+  import Swiper from 'swiper';
+    import { onDestroy, onMount } from 'svelte';
 
      export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
@@ -8,11 +10,65 @@
     export let v_img = 'v_img';
     export let v_src = 'v_src';
     export let arr = [];
+    
     export let sc1 = {v_txt_1, v_txt_2, v_txt_3, v_img, v_src, arr};
-    export let x = '' ;
+    export let x ;
 
-    $: console.log(x.x)
-    $: console.log(x.x === '6000' ? true :false)
+    let swiper;
+
+
+
+    onMount(() => {
+				swiper = new Swiper('#acne-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				grabCursor: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#acne-next',
+						prevEl: '#acne-prev'
+					},
+				scrollbar: {
+					el: '#acne-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.acne-combo",
+				  dragSize: 50
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+              
+        $: {
+    if (swiper) {
+        swiper.slideTo(0);
+    }
+}
+
+           
+  })
+				onDestroy(() => {
+        })
+
 
 
 </script>
@@ -35,6 +91,8 @@
             <!-- <One_Card></One_Card> -->
             {#each arr as obj}
             {#if obj.v_txt_1 === Number(x.x)}
+            <One_Card2  obj={obj} ></One_Card2>
+            {:else if x === ''}
             <One_Card2  obj={obj} ></One_Card2>
             {/if}
             {/each }

@@ -1,5 +1,7 @@
 <script>
 export let obj = {};
+
+$: console.log(obj);
 </script>
 <div class="products-cards-images-wrapper">
     <img
