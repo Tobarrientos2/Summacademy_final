@@ -1,0 +1,218 @@
+{
+ "sc1": [
+    {
+      "v_slug": "resumenes",
+      "v_txt_1": "Resumenes",
+      "v_txt_2": "Incluye pruebas y exámenes de ciencias, con precios desde 6,000 a 15,000. Detalla los contenidos de cada prueba o examen.",
+      "v_txt_3": "Ver Resumenes",
+      "arr": [
+        { 
+          "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298478762131497/Resumen_Sociedad_Prueba_1.png?ex=660727e0&is=65f4b2e0&hm=b28e550521257819beff2ce8749e95f3247fa799e5a0d1a4949c94a1a39cd9e5&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-ciencias/prueba-1",
+          "v_txt_1": 6000,
+          "v_txt_2": "Core Ciencias Prueba 1",
+          "v_txt_3": "Una prueba exhaustiva que abarca conceptos fundamentales de las ciencias."
+        },{
+          "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298399984717965/Resumen_Core_Ciencias_Prueba_2.png?ex=660727cd&is=65f4b2cd&hm=92c7fad38b5df18a5064dd3e27ba88f8b0ad7ce29cb9737f2804c27b055e4dc3&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-ciencias/prueba-2",
+          "v_txt_1": 8000,
+          "v_txt_2": "Core Ciencias Prueba 2",
+          "v_txt_3": "Prueba avanzada con preguntas desafiantes para evaluar el conocimiento profundo en ciencias."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298400697483386/Resumen_Core_Ciencias_Examen.png?ex=660727cd&is=65f4b2cd&hm=0a5cdc052072d83efd5c221d9f874bd78fe8eb394a518d2cdbf79f73c10a8086&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-ciencias/examen",
+          "v_txt_1": 15000,
+          "v_txt_2": "Core Ciencias Examen",
+          "v_txt_3": "Examen comprensivo que cubre una amplia gama de temas científicos, diseñado para poner a prueba la comprensión y retención de los estudiantes."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298217062731806/Resumen_La_Odisea.png?ex=660727a1&is=65f4b2a1&hm=f5349f24739453c867b9aceeb84ef12ba9906687da3f8c3d286aba6ffd76571f&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/homero-la-odisea",
+          "v_txt_1": 6000,
+          "v_txt_2": "Homero 'La Odisea'",
+          "v_txt_3": "Un viaje épico de regreso a casa lleno de aventuras y desafíos mitológicos."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298217406529667/Resumen_Antigona.png?ex=660727a1&is=65f4b2a1&hm=ca81f3b74d37961ce8789da01af44ad30ba78a12728a2df50a58da2576ebf47f&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/sófocles-antígona",
+          "v_txt_1": 6000,
+          "v_txt_2": "Sóflocles 'Antígona'",
+          "v_txt_3": "Una tragedia sobre el poder, la familia y la ley, explorando los límites de la moral y la justicia."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298217792409650/Resumen_Metamorfosis.png?ex=660727a2&is=65f4b2a2&hm=91ad0044ef3d06a66def29953dcf780b145b7ea63d3d669e76fcb7812b3e5b07&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/virgilio-la-eid",
+          "v_txt_1": 6000,
+          "v_txt_2": "Ovidio 'Metamorfosis'",
+          "v_txt_3": "Colección de mitos poéticos que narran la creación y la historia del mundo a través de transformaciones."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298218249719818/Resumen_Divina_Comedia.png?ex=660727a2&is=65f4b2a2&hm=a543211cd77b6a2e8a454afe37854cb2ade605c0293823b89af62de723b36d58&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/dante-divina-comedia",
+          "v_txt_1": 6000,
+          "v_txt_2": "Dante 'Divina Comedia'",
+          "v_txt_3": "Un viaje alegórico a través del Infierno, el Purgatorio y el Paraíso, explorando temas de la vida después de la muerte y la redención."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298218576609380/Resumen_Decameron.png?ex=660727a2&is=65f4b2a2&hm=98b1e9ef5e17751c8e320caa4aed0bfa3663b20e7d2e730637449a576ddbee58&=&format=webp&quality=lossless&width=1024&height=1024",
+           "v_slug": "resumenes/core-literatura-y-humanidades/boccaccio-decamerón",
+          "v_txt_1": 6000,
+          "v_txt_2": "Boccaccio 'Decamerón'",
+          "v_txt_3": "Conjunto de cuentos ingeniosos y moralizantes narrados por un grupo de jóvenes refugiados en el campo durante la peste negra."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298219021471835/Resumen_Ensayos.png?ex=660727a2&is=65f4b2a2&hm=15b43fba6e3109a688a8123afc3f374ce41ed40d84262c862f0e4b7aff124416&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/montaigne-ensayos",
+          "v_txt_1": 6000,
+          "v_txt_2": "Montaigne 'Ensayos'",
+          "v_txt_3": "Reflexiones profundas y personales sobre la vida, la educación, la amistad, la literatura y la filosofía."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298219394633798/Resumen_Hamlet.png?ex=660727a2&is=65f4b2a2&hm=98e9c2d20945379e67ba30017b5bd68354cbccb2782231cebc6cfb7743c5b91f&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-literatura-y-humanidades/shakespeare-hamlet",
+          "v_txt_1": 6000,
+          "v_txt_2": "Shakespeare 'Hamlet'",
+          "v_txt_3": "La trágica historia de Hamlet, príncipe de Dinamarca, y su búsqueda de venganza contra su tío usurpador."
+        }
+,
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298100498563102/Resumen_La_Republica.png?ex=66072786&is=65f4b286&hm=a2c6a300ce1339ede8b0e8313aface333b57ffd28d950f64e3d962defe31c214&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/platin-la-republica",
+          "v_txt_1": 6000,
+          "v_txt_2": "Platón 'La República'",
+          "v_txt_3": "Exploración fundamental sobre justicia, orden ideal del estado y el individuo."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298219956535296/Resumen_Etica_a_Nicomaco.png?ex=660727a2&is=65f4b2a2&hm=f88eb56620921bfa6c9e32297438c7f32742fc47244a7b5cea1e218f4050b581&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/aristoteles-etica-a-nicomaco",
+          "v_txt_1": 6000,
+          "v_txt_2": "Aristóteles 'Ética a Nicómaco'",
+          "v_txt_3": "Una obra maestra sobre la ética y la felicidad, fundamentando la virtud como el medio para alcanzar el bien supremo."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298099773214721/Resumen_Politica.png?ex=66072785&is=65f4b285&hm=3dd5d79de3bf440450a49eb9ca515ddd091c1022a4c885fc187ff7a88cf0e13d&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/aristoteles-politica",
+          "v_txt_1": 6000,
+          "v_txt_2": "Aristóteles 'Política'",
+          "v_txt_3": "Análisis detallado sobre los sistemas de gobierno y la estructura ideal de una ciudad-estado."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298099395461261/Resumen_Epicuro_y_Epicteto.png?ex=66072785&is=65f4b285&hm=c8fe6aa797001ab15f17f10fd97e0a665eef2b23bd6db81525ecfda0c5a5a035&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/epicuro-carta-a-meneceo",
+          "v_txt_1": 6000,
+          "v_txt_2": "Epicuro 'Carta a Meneceo y selección de Máximas capitales y Sentencias vaticanas' Epicteto 'Manual'",
+          "v_txt_3": "Guías esenciales para una vida plena, centradas en el placer, la ética y la fortaleza personal."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298099059920996/Resumen_El_libre_albedrio.png?ex=66072785&is=65f4b285&hm=e178bbdfa57bb1da57cc5f46295ada60e12de0eaa86ca9faf69e6df053080e96&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/agustin-santo-obispo-de-hipona-el-libre-albedrio", 
+          "v_txt_1": 6000,
+          "v_txt_2": "Agustín (Santo, Obispo de Hipona) 'El libre albedrío'",
+          "v_txt_3": "Discusión profunda sobre la naturaleza del bien, el mal y la libertad humana."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298098733027338/Resumen_Suma_de_Teologia.png?ex=66072785&is=65f4b285&hm=a2a4fbfb377b2c338fedda7cdfe7d9b6e0ee339f5faf10da1bdc46a9d2a781b9&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/tomas-de-aquino-suma-de-teologia",  
+          "v_txt_1": 6000,
+          "v_txt_2": "Tomás de Aquino 'Suma de Teología'",
+          "v_txt_3": "Exposición completa de la doctrina cristiana, fusionando fe y razón."
+        },
+        {"v_img": "",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/maquiavelo-el-principe",  
+          "v_txt_1": 6000,
+          "v_txt_2": "Maquiavelo 'El príncipe'",
+          "v_txt_3": "Manual sobre el poder político y la adquisición y mantenimiento del mismo."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298098426577037/Resumen_Discurso_del_metodo.png?ex=66072785&is=65f4b285&hm=0aa35a5ce57cdb4be4220d114b24ba5548184e07b7dd8d67cddd691b35d94380&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/descartes-discurso-del-metodo",  
+          "v_txt_1": 6000,
+          "v_txt_2": "Descartes 'Discurso del método'",
+          "v_txt_3": "Fundamento del pensamiento moderno y la importancia del método científico."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298098070065202/Resumen_Leviatan.png?ex=66072785&is=65f4b285&hm=bd7c873bba7a0356fb18580421fce80c40e81acaf2d7390b22dd1b30faed6c75&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/hobbes-leviatan", 
+          "v_txt_1": 6000,
+          "v_txt_2": "Hobbes 'Leviatán'",
+          "v_txt_3": "Obra sobre la estructura de la sociedad y el gobierno legítimo."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298097734783109/Resumen_Segundo_tratado_Sobre_el_Gobierno_CIvil.png?ex=66072785&is=65f4b285&hm=62b6513b3a8e64cce38c68d9d6774ae4a13d8aaaa7ac119262f8874872a1fa78&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-civilizacion-contemporanea/locke-segundo-tratado-sobre-el-gobierno-civil", 
+          "v_txt_1": 6000,
+          "v_txt_2": "Locke 'Segundo tratado Sobre el Gobierno Civil'",
+          "v_txt_3": "Ensayo influyente que defiende la soberanía del pueblo y los principios del gobierno democrático."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298399238131813/Resumen_Suma_teologica.png?ex=660727cd&is=65f4b2cd&hm=4ad8e4995211b5e1a648dcbff1d316ebd06dda492a675716b2ca24cadefb0a8c&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/tomas-de-aquino-suma-de-teologia",
+          "v_txt_1": 6000,
+          "v_txt_2": "Tomas de Aquino 'Suma Teológica'",
+          "v_txt_3": "Obra esencial que combina teología cristiana con filosofía aristotélica para explorar cuestiones de fe y razón."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298398667444285/Resumen_Deontologia.png?ex=660727cd&is=65f4b2cd&hm=01497fade3efd7f2328d0f2a70d8e6e6401f127f15d51e5e5f3518d3f85e3447&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/bentham-deontologia",
+          "v_txt_1": 6000,
+          "v_txt_2": "Bentham 'Deontología'",
+          "v_txt_3": "Introduce el concepto de utilitarismo, evaluando las acciones según su contribución a la felicidad general."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298398952652979/Resumen_El_Utilitarismo.png?ex=660727cd&is=65f4b2cd&hm=7073a21077d6a066702dfb7a3f1a0f4d7f80e8d4f474e2d58bc22186364ea12f&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/mill-el-utilitarismo",
+          "v_txt_1": 6000,
+          "v_txt_2": "Mill 'El Utilitarismo'",
+          "v_txt_3": "Extiende y profundiza los principios utilitaristas de Bentham, enfatizando la calidad de los placeres."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298399573413918/Resumen_Fundamentacion_para_una_metafisica_de_las_costumbres.png?ex=660727cd&is=65f4b2cd&hm=7c49d500cc220e116f64d094c7ce052d1a92313ebf2ac405b09a85eb0461afee&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/kant-fundamentacion-para-una-metafisica-de-las-costumbres",
+          "v_txt_1": 6000,
+          "v_txt_2": "Kant 'Fundamentación para una metafísica de las costumbres'",
+          "v_txt_3": "Define la moralidad a través del imperativo categórico, argumentando que las acciones deben ser universales."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298398206332938/Resumen_Los_principios_de_la_moral_y_la_legislacion.png?ex=660727cd&is=65f4b2cd&hm=aa1f5a0187c079cd53d213372069fb24feb374f544bed5a72a09e1668a86208a&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/bentham-los-principios-de-la-moral-y-la-legislacion",
+          "v_txt_1": 6000,
+          "v_txt_2": "Bentham 'Los principios de la moral y la legislación'",
+          "v_txt_3": "Obra que detalla la teoría utilitarista, analizando cómo las leyes pueden promover la felicidad."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298397782442034/Resumen_La_metafisica_de_las_costumbres.png?ex=660727cc&is=65f4b2cc&hm=fc6789d25f826f2a8373d18deb89eb6f0a8918035651f4fdbe80b9b1b5ec2689&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/kant-la-metafisica-de-las-costumbres",
+          "v_txt_1": 6000,
+          "v_txt_2": "Kant 'La metafísica de las costumbres'",
+          "v_txt_3": "Examina los principios de la ética y la moral, distinguiendo entre la moralidad y la legalidad de las acciones."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298100142051398/Resumen_Etica_a_Nicomaco_2.png?ex=66072785&is=65f4b285&hm=7d9ad9cff47bbe400fc0d636836a55609900c04848d5f2e115c5b564606974da&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/core-etica/aristoteles-etica-a-nicomaco",
+          "v_txt_1": 6000,
+          "v_txt_2": "Aristóteles 'Ética a Nicómaco'",
+          "v_txt_3": "Una de las principales obras filosóficas sobre ética, que investiga la idea de la felicidad como fin último de la vida humana."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298216668336129/Resumen_Prueba_1_Derecho_e_Institucionalidad.png?ex=660727a1&is=65f4b2a1&hm=d69acde6b2391962f1ee744f7d4a4d3347f4287258599cda007b3158be545ac3&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comerial/sociedad-cultura-politica-prueba-1",
+          "v_txt_1": 6000,
+          "v_txt_2": "Sociedad, Cultura, Política Prueba 1",
+          "v_txt_3": "Evaluación centrada en los aspectos sociales, culturales y políticos relevantes para la formación en Ingeniería Comercial."
+        },
+        {"v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298479130972171/Resumen_Sociedad_Prueba_2.png?ex=660727e0&is=65f4b2e0&hm=a0720cab1264431d6761dbf560d15dc13d6dfccb394c9d96d4114d3a330827e1&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/sociedad-cultura-politica-prueba-2",
+          "v_txt_1": 6000,
+          "v_txt_2": "Sociedad, Cultura, Política Prueba 2",
+          "v_txt_3": "Continuación de la evaluación de conocimientos en sociedad, cultura y política, con enfoque en casos prácticos."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298478111756428/Resumen_Sociedad_Prueba_3.png?ex=660727e0&is=65f4b2e0&hm=722948991320d10aa7f24ff402ffcd6d8042b5f5a4ef87fc8c7bc2aaf48de0bf&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/sociedad-cultura-politica-prueba-3",
+          "v_txt_1": 6000,
+          "v_txt_2": "Sociedad, Cultura, Política Prueba 3",
+          "v_txt_3": "Examen avanzado que desafía la comprensión del estudiante sobre temas de actualidad en sociedad, cultura y política."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298401230426262/Resumen_Sociedad_Examen.png?ex=660727cd&is=65f4b2cd&hm=1cfe6d955d0ca150614375c13fb59f64e10db1e49fa56a94c8de006d5cd77bc6&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/sociedad-cultura-politica-examen",
+          "v_txt_1": 6000,
+          "v_txt_2": "Sociedad, Cultura, Política Examen",
+          "v_txt_3": "Examen comprensivo que abarca todos los temas clave de la materia, enfocado en análisis crítico y solución de problemas."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298478762131497/Resumen_Sociedad_Prueba_1.png?ex=660727e0&is=65f4b2e0&hm=b28e550521257819beff2ce8749e95f3247fa799e5a0d1a4949c94a1a39cd9e5&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/derecho-e-institucionalidad-prueba-1",
+          "v_txt_1": 6000,
+          "v_txt_2": "Derecho e Institucionalidad Prueba 1",
+          "v_txt_3": "Prueba que examina los fundamentos del derecho y la estructura institucional, esencial para el futuro profesional en Ingeniería Comercial."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298399984717965/Resumen_Core_Ciencias_Prueba_2.png?ex=660727cd&is=65f4b2cd&hm=92c7fad38b5df18a5064dd3e27ba88f8b0ad7ce29cb9737f2804c27b055e4dc3&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/derecho-e-institucionalidad-prueba-2",
+          "v_txt_1": 6000,
+          "v_txt_2": "Derecho e Institucionalidad Prueba 2",
+          "v_txt_3": "Segunda parte de la evaluación sobre derecho e institucionalidad, con preguntas de mayor complejidad."
+        },
+        { "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1218298100888899584/Resumen_Examen_Derecho_e_Institucionalidad.png?ex=66072786&is=65f4b286&hm=8fa276a565904d0424cb3181f2ec9931563d772717302d512b3a2e2ad9fe4ad3&=&format=webp&quality=lossless&width=1024&height=1024",
+          "v_slug": "resumenes/ingenieria-comercial/derecho-e-institucionalidad-examen",
+          "v_txt_1": 6000,
+          "v_txt_2": "Derecho e Institucionalidad Examen",
+          "v_txt_3": "Examen final que cubre de manera exhaustiva los principios y aplicaciones del derecho en el contexto de la ingeniería comercial."
+        }
+      ]
+    }
+  ]
+}

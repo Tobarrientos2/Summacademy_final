@@ -1,0 +1,30 @@
+{
+  "ex1": [
+    {
+      "v_slug": "experiencias",
+      "v_txt_1": "Experiencias de estudiantes",
+      "v_txt_2": "Comprensión única de las necesidades de los estudiantes universitarios",
+      "v_txt_3": "Ver Expeciencias",
+      "arr": [
+        {
+          "v_slug": "experiencias/educacion-y-emprendimiento",
+          "v_txt_1": "Educación y Emprendimiento",
+          "v_txt_2": "Estudiantes de Ingeniería Comercial con Beca de Honor en la Universidad Adolfo Ibañez, co-fundadores de Summacademy.",
+          "v_txt_3": "v_txt_3"
+        },
+        {
+          "v_slug": "experiencias/resolución-de-problemas-academicos",
+          "v_txt_1": "Resolución de Problemas Académicos",
+          "v_txt_2": "Entendimiento profundo del problema de sobrecarga de información en la educación universitaria y desarrollo de soluciones personalizadas para abordarlo.",
+          "v_txt_3": "v_txt_3"
+        },
+        {
+          "v_slug": "experiencias/conexion-con-el-mercado-objetivo",
+          "v_txt_1": "Conexión con el Mercado Objetivo",
+          "v_txt_2": "Foco en alumnos de la Universidad Adolfo Ibañez de Pregrado, de las ciudades de Viña del Mar y Santiago, abarcando diversas carreras universitarias.",
+          "v_txt_3": "v_txt_3"
+        }
+      ]
+    }
+  ]
+}

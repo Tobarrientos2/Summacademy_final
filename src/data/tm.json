@@ -1,0 +1,24 @@
+{
+  "tm1": [
+    { "v_img": "/static/1.png",
+      "v_slug":"/equipo",
+      "v_txt_1": "Summacademy",
+      "v_txt_2": "Equipo Dedicado a la Calidad Educativa",
+      "v_txt_3": "Ver Equipo",
+      "arr": [
+        { "v_img": "/static/tm/bastian_gonzales.jpg",
+          "v_slug": "equipo/bastian-gonzalez",
+          "v_txt_1": "Bastián González",
+          "v_txt_2": "Co-fundador de Summacademy y estudiante de Ingeniería Comercial con Beca de Honor en la Universidad Adolfo Ibañez",
+          "v_txt_3": "Apasionado por la educación y el desarrollo de soluciones innovadoras para estudiantes"
+        },
+        { "v_img": "/static/tm/nicolas_solari.jpg",
+           "v_slug": "equipo/nicolas-solari",
+          "v_txt_1": "Nicolás Solari",
+          "v_txt_2": "Co-fundador de Summacademy y estudiante de Ingeniería Comercial con Beca de Honor en la Universidad Adolfo Ibañez",
+          "v_txt_3": "Enfocado en aportar valor a la experiencia educativa de los estudiantes universitarios"
+        }
+      ]
+    }
+  ]
+}

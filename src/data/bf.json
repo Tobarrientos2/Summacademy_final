@@ -1,0 +1,73 @@
+{
+  "bf1": [{
+    "v_slug": "beneficios",
+    "v_txt_1": "Estudio eficaz Comprension profunda",
+    "v_txt_2": "En SummAcademy no fallamos, nosotros estamos comprometidos con ayudar a nuestros estudiantes a conseguir sus metas personales de forma que el estudio no sea un impedimento, sino que sea la herramienta que les permita materializar sus ambiciones.",
+    "v_txt_3": "Ver Beneficios",
+    "arr": [
+      { 
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273415139037365/1.png?ex=66159dd2&is=660328d2&hm=6baac0396bdbabfd872ce9618596f9bb8e5ced0810c38a402384b5b35d745237&=&format=webp&quality=lossless&width=1548&height=1024",
+        "v_slug": "beneficios/ahorro-de-tiempo",
+        "v_txt_1": "Ahorro de Tiempo",
+        "v_txt_2": "Los servicios de Summacademy ahorran tiempo al proporcionar resúmenes eficientes, permitiendo a los estudiantes comprender temas complejos en la mitad del tiempo.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273415814185083/3.png?ex=66159dd3&is=660328d3&hm=e52b5b7b0cb46b38e8b17bad8af66b1852db002eb31ad638edad6502f9fce726&=&format=webp&quality=lossless&width=954&height=1024",
+        "v_slug": "beneficios/mejor-comprension-y-retencion",
+        "v_txt_1": "Mejor Comprensión y Retención",
+        "v_txt_2": "Los resúmenes de Summacademy mejoran la comprensión y retención del material estudiado, gracias a su enfoque en la claridad y la concisión.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273416447398029/4.png?ex=66159dd3&is=660328d3&hm=b813a5cbf4d38cd2eaf424215a96b50fa33775daa7e192c4540caa44b296428b&=&format=webp&quality=lossless&width=674&height=1024",
+        "v_slug": "beneficios/mejores-resultados-academicos",
+        "v_txt_1": "Mejores Resultados Académicos",
+        "v_txt_2": "La utilización de los resúmenes de Summacademy puede conducir a mejores resultados académicos, evidenciado por la garantía de satisfacción que ofrece la academia.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273417223471214/5.png?ex=66159dd3&is=660328d3&hm=61293b971da1fe3d0c5d056c49c757321cb2f6d6a9afd01c309004cbf990ff0e&=&format=webp&quality=lossless&width=1606&height=1056",
+        "v_slug": "beneficios/garantia-de-satisfaccion",
+        "v_txt_1": "Garantía de Satisfacción",
+        "v_txt_2": "Si un cliente obtiene una nota inferior a 4 después de utilizar nuestros resúmenes, Summacademy ofrece una devolución total de la compra, reduciendo el riesgo al mínimo posible.",
+        "v_txt_3": "v_txt_3"
+      },
+      { 
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273418083176488/12.png?ex=66159dd3&is=660328d3&hm=6bf51a128cbba8d5ef104a31d264ee374c4e5dc83e57362723d70f86a7488e72&=&format=webp&quality=lossless&width=1624&height=1056",
+        "v_slug": "beneficios/enfoque-personalizado",
+        "v_txt_1": "Enfoque Personalizado",
+        "v_txt_2": "Cada resumen de Summacademy está diseñado para satisfacer las necesidades específicas del curso y del estudiante, incluyendo personalización enfocada y contenido basado en la ciencia para la memorización.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273418930688020/11.png?ex=66159dd3&is=660328d3&hm=265fd20573d0f8815205a0db57330bb133da5b06dbf30f392297412db274cd46&=&format=webp&quality=lossless&width=1580&height=1056",
+        "v_slug": "beneficios/apoyo-a-actividades-extracurriculares",
+        "v_txt_1": "Apoyo a Actividades Extracurriculares",
+        "v_txt_2": "Al reducir el tiempo de estudio necesario, Summacademy permite a los estudiantes participar más activamente en actividades fuera de lo académico, fomentando un equilibrio saludable entre la vida académica y personal.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273419769286727/10.png?ex=66159dd4&is=660328d4&hm=294158ef7db42bfffb252be62d07249fd1f67d1486a9ba53a9e8bea48b17551f&=&format=webp&quality=lossless&width=1570&height=1056",
+        "v_slug": "beneficios/promocion-de-la-salud-mental",
+        "v_txt_1": "Promoción de la Salud Mental",
+        "v_txt_2": "Al abordar la sobrecarga de información y la desmotivación universitaria, Summacademy contribuye a la mejora del bienestar y la salud mental de los estudiantes.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273420511805572/9.png?ex=66159dd4&is=660328d4&hm=1d18072f1f9c8fc7f6bb9c54fc535c6979c9f380d8948eb9813ef7ed330f993c&=&format=webp&quality=lossless&width=1592&height=1054",
+        "v_slug": "beneficios/accesibilidad-economica",
+        "v_txt_1": "Accesibilidad Económica",
+        "v_txt_2": "Con un precio uniforme de 6.000 pesos chilenos por resumen, Summacademy se posiciona como una opción accesible para estudiantes de diversas carreras y condiciones económicas.",
+        "v_txt_3": "v_txt_3"
+      },
+      {
+        "v_img": "https://media.discordapp.net/attachments/1218297896156266556/1222273421313052843/8.png?ex=66159dd4&is=660328d4&hm=32d78f02be5bee8a53799f0581c50752eaf1100b12addcf8d19ebce59e36c2f8&=&format=webp&quality=lossless&width=1496&height=1056",
+        "v_slug": "beneficios/experiencia-de-aprendizaje-enriquecida",
+        "v_txt_1": "Experiencia de Aprendizaje Enriquecida",
+        "v_txt_2": "El enfoque de Summacademy en el trabajo profundo, la personalización, y la inclusión de elementos como comentarios en clase y citas relevantes, mejora significativamente la experiencia de aprendizaje de los estudiantes universitarios.",
+        "v_txt_3": "v_txt_3"
+      }
+    ]
+  }]
+}
