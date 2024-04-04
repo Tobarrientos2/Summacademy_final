@@ -1,7 +1,8 @@
 <script>
 	import One_Card2 from './One_Card2.svelte';
 	import One_Card from './One_Card.svelte';
-  import Swiper from 'swiper';
+  import Swiper from 'swiper'; 
+
     import { onDestroy, onMount } from 'svelte';
 
      export let v_txt_1 = 'v_txt_1';
@@ -13,8 +14,10 @@
     
     export let sc1 = {v_txt_1, v_txt_2, v_txt_3, v_img, v_src, arr};
     export let x ;
+   
 
-    let swiper;
+    let swiper;    
+
 
 
 
@@ -89,7 +92,7 @@
             style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; cursor: grab;"
         >
             <!-- <One_Card></One_Card> -->
-            {#each arr as obj}
+            {#each arr as obj, i}
             {#if obj.v_txt_1 === Number(x.x)}
             <One_Card2  obj={obj} ></One_Card2>
             {:else if x === ''}

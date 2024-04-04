@@ -14,5 +14,5 @@ export let v_txt_1 = 'v_txt_1';
     aria-busy="false"
     aria-haspopup="dialog"
     class="w-commerce-commerceaddtocartbutton transparent-button-rebrand"
-    value="Add to Cart"
+    value="Agregar al carro"
 />

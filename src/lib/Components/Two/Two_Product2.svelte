@@ -7,6 +7,7 @@
     export let v_txt_3 = 'v_txt_3';
     export let v_img = 'v_img';
     export let v_src = 'v_src';
+    export let obj = {};
 </script>
 
 <div class="add-to-cart-wrapper-bundles">
@@ -22,7 +23,7 @@
                         class="w-commerce-commerceaddtocartform atc-div"
                     >
                         <Three_CountProduct></Three_CountProduct>
-                       <Three_ButtonProduct></Three_ButtonProduct>
+                       <Three_ButtonProduct ></Three_ButtonProduct>
                     </form>
                     <div
                         style="display:none"

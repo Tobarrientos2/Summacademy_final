@@ -1,5 +1,5 @@
 <script>
-	import Three_Button from './../Three/Three_Button.svelte';
+	import Three_Button from '../Three/Three_Button.svelte';
     export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
     export let v_txt_3 = 'v_txt_3';

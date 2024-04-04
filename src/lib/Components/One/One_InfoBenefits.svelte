@@ -7,6 +7,7 @@
     export let v_txt_3 = 'v_txt_3';
     export let v_img = 'v_img';
     export let v_src = 'v_src';
+
 </script>
 
 <div class="div-block-108 width-100">

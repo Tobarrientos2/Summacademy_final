@@ -13,7 +13,7 @@
     aria-busy="false"
     aria-haspopup="dialog"
     class="w-commerce-commerceaddtocartbutton primary-button-rebrand atc"
-    value="Add to Cart"
+    value="Agregar al carro"
 /><a
     data-node-type="commerce-buy-now-button"
     data-default-text="Buy now"
@@ -24,5 +24,5 @@
     class="w-commerce-commercebuynowbutton primary-button vitamin-c"
     href="/checkout"
     data-publishable-key="pk_live_51GjuxpI9the8U93mxiJtMRmSqU3pFBksXRu34sf5Lh8njovioY5ukHkoQw5SNEkf3uJzinKyR4ivgNrOcjIRpE8300QJrYX1Xq"
-    >Buy now</a
+    >Agregar al carro</a
 >

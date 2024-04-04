@@ -24,7 +24,7 @@ export let obj = {};
             class="text-block-8"
             data-svelte-h="svelte-1378mc6"
         >
-            3-pack
+            disponible
         </div>
         <div
             class="text-block-8"

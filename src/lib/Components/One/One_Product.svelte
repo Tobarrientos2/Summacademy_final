@@ -1,4 +1,5 @@
 <script>
+	import Two_Card2Prices from './../Two/Two_Card2Prices.svelte';
     import One_Recomendation from "./One_Recomendation.svelte";
     import One_InfoBenefits from "./One_InfoBenefits.svelte";
     import Two_Product3 from "./../Two/Two_Product3.svelte";
@@ -7,14 +8,35 @@
     import One_PagesPointer from "./One_PagesPointer.svelte";
     import Two_Products2 from "../Two/Two_Product2.svelte";
     import Two_Products from "../Two/Two_Product.svelte";
+    import { getContext, onMount } from "svelte";
+    import { objStore } from './../../../lib/index';
+
+
+
 
     export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
     export let v_txt_3 = 'v_txt_3';
     export let v_img = 'v_img';
     export let v_src = 'v_src';
-</script>
+    export let obj = {};
 
+    if(typeof window !== 'undefined' && window.sessionStorage){
+        obj = sessionStorage.getItem('obj');
+        obj = JSON.parse(obj);
+        console.log(obj)
+    }
+
+
+
+   
+
+   
+
+</script> 
+
+
+{#if Object.keys(obj).length > 0 }
 <div class="section-rebrand rebrand-v2-hero-padding">
     <div class="container-rebrand-2 grid">
         <One_PagesPointer></One_PagesPointer>
@@ -22,9 +44,10 @@
             id="w-node-b197fe63-6dfb-4735-b0d8-7876ffce4d48-15b68dda"
             class="container-rebrand no-padding-sides"
         >
-            <Two_Products></Two_Products>
-            <Two_Products2></Two_Products2>
-            <Two_Product3></Two_Product3>
+            <Two_Products obj={obj}></Two_Products>
+            <Two_Card2Prices obj={obj}></Two_Card2Prices>
+            <Two_Products2 obj={obj}></Two_Products2>
+            <Two_Product3 ></Two_Product3>
             <One_InfoBenefits></One_InfoBenefits>
             <One_Recomendation></One_Recomendation>
         </div>
@@ -213,3 +236,4 @@
         </div>
     </div>
 </div>
+{/if}

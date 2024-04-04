@@ -2,6 +2,7 @@
 	import One_Header from './../lib/Components/One/One_Header.svelte';
 	import One_Footer from './../lib/Components/One/One_Footer.svelte';
 import "../style.css"
+
 </script>
 
 

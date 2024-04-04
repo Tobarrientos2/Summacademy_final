@@ -5,9 +5,23 @@
 	import Two_Card2Includes from './../Two/Two_Card2Includes.svelte';
 	import Two_Card2Heading from './../Two/Two_Card2Heading.svelte';
 	import Two_Card2Prices from './../Two/Two_Card2Prices.svelte';
+    import { writable } from 'svelte/store';
+    import { objStore } from '$lib';
+
 
 
     export let obj = {};
+
+    
+    
+    function handleClick(){
+        sessionStorage.setItem('obj', JSON.stringify(obj))
+        objStore.set(obj);
+        $:console.log(obj)
+        $:console.log(obj)
+    }
+
+  
 </script>
 
 <div
@@ -15,8 +29,8 @@
                 class="swiper-slide home-product w-dyn-item swiper-slide-next"
                 style="width: 280px; margin-right: 16px;"
             >
-                <a
-                    href="http://www.skin.software/products/hydrogel-sheet-mask"
+                <a   on:click={handleClick}
+                    href={obj.v_slug}
                     class="product-cards-wrapper height-auto w-inline-block"
                     ><div
                         id="products-cards"
@@ -33,6 +47,7 @@
                             </div>
                         </div>
                        <Three_Card2Button></Three_Card2Button>
-                    </div></a
+                    </div>
+                    </a
                 >
             </div>
