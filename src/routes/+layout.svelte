@@ -7,6 +7,8 @@ import "../style.css"
 
 
 <svelte:head>
+	<!-- favicon -->
+	<link rel="icon" href="/tm/tm_logo.jpeg" />
 
 </svelte:head>
 
