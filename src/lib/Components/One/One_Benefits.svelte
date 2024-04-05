@@ -1,23 +1,19 @@
 <script>
-	import Two_Benefits2 from './../Two/Two_Benefits2.svelte';
-	import Two_Benefits from './../Two/Two_Benefits.svelte';
-    import Two_Benefits3 from './../Two/Two_Benefits3.svelte';
-    import ThreeButton3 from '../Three/Three_Button3.svelte';
+	import Two_BenefitsP from '../Two/Two_BenefitsP.svelte';
+	import Two_BenefitsH from '../Two/Two_BenefitsH.svelte';
+    import Two_BenefitsIHP from '../Two/Two_BenefitsIHP.svelte';
+    import Three_BenefitsB from '../Three/Three_BenefitsB.svelte';
 
 
-    export let v_txt_1 = 'v_txt_1';
-    export let v_txt_2 = 'v_txt_2';
-    export let v_txt_3 = 'v_txt_3';
-    export let v_img = 'v_img';
-    export let v_src = 'v_src';
+    export let bf1 = {};
 </script>
 
 
 <section class="section-rebrand bg-black">
     <div class="container-rebrand-2 grid">
-        <Two_Benefits></Two_Benefits>
-        <Two_Benefits2></Two_Benefits2>
-        <ThreeButton3></ThreeButton3>
+        <Two_BenefitsH obj={bf1}></Two_BenefitsH>
+        <Two_BenefitsP obj={bf1}></Two_BenefitsP>
+        <!-- <Three_BenefitsB></Three_BenefitsB> -->
         <div
             id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd37b8-5875fff3"
             class="ingredients-swiper-wrapper-home"
@@ -30,12 +26,11 @@
                     id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd37ba-5875fff3"
                     class="swiper-wrapper ingredients-home"
                 >
-                 <Two_Benefits3></Two_Benefits3>
-                 <Two_Benefits3></Two_Benefits3>
-                 <Two_Benefits3></Two_Benefits3>
-                 <Two_Benefits3></Two_Benefits3>
-                 <Two_Benefits3></Two_Benefits3>
-
+                {#each bf1.arr.splice(3,9) as obj}
+                <Two_BenefitsIHP obj={obj}></Two_BenefitsIHP>
+               
+                {/each}
+                
                 </div>
             </div>
             <div

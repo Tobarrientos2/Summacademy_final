@@ -1,9 +1,9 @@
 <script>
-	import Three_Link from '../Three/Three_Button4.svelte';
-	import Three_Button4 from '../Three/Three_Link.svelte';
-	import Two_Questions3 from './../Two/Two_Questions3.svelte';
-	import Two_Questions2 from './../Two/Two_Questions2.svelte';
-	import Two_Questions from './../Two/Two_Questions.svelte';
+	import Three_QuestionsB from '../Three/Three_QuestionsB.svelte';
+	import Three_QuestionsP from '../Three/Three_QuestionsP.svelte';
+	import Two_QuestionsD from '../Two/Two_QuestionsD.svelte';
+	import Two_QuestionsIHP from '../Two/Two_QuestionsIHP.svelte';
+	import Two_QuestionsHP from '../Two/Two_QuestionsHP.svelte';
 
     export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
@@ -19,22 +19,22 @@
             id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd385a-5875fff3"
             class="container-rebrand no-padding-sides-2"
         >
-           <Two_Questions></Two_Questions>
-            <Two_Questions2></Two_Questions2>
+           <Two_QuestionsHP></Two_QuestionsHP>
+            <Two_QuestionsIHP></Two_QuestionsIHP>
         </div>
         <div
             id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd3866-5875fff3"
             class="container-rebrand no-padding-sides-2"
         >
-            <Two_Questions3></Two_Questions3>
-            <Two_Questions3></Two_Questions3>
-            <Two_Questions3></Two_Questions3>
-            <Two_Questions3></Two_Questions3>
+            <Two_QuestionsD></Two_QuestionsD>
+            <Two_QuestionsD></Two_QuestionsD>
+            <Two_QuestionsD></Two_QuestionsD>
+            <Two_QuestionsD></Two_QuestionsD>
 
            
             <div class="flex-horizontal-rebrand justify-end">
-                <Three_Button4></Three_Button4>
-                <Three_Link></Three_Link>
+                <Three_QuestionsP></Three_QuestionsP>
+                <Three_QuestionsB></Three_QuestionsB>
             </div>
         </div>
     </div>

@@ -1,8 +1,8 @@
 <script>
-	import One_Cart from './One_Cart.svelte';
-	import Three_HeaderLogo from './../Three/Three_HeaderLogo.svelte';
-	import One_Dropdown from './One_Dropdown.svelte';
-	import Three_HeaderLink from './../Three/Three_HeaderLink.svelte';
+	import P_One_HeaderCart from './P_One_HeaderCart.svelte';
+	import Three_HeaderI from '../Three/Three_HeaderI.svelte';
+	import P_One_Dropdown from './P_One_Dropdown.svelte';
+	import Three_HeaderL from '../Three/Three_HeaderL.svelte';
 
   export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
@@ -21,7 +21,7 @@
   role="banner"
   class="navbar-v3 w-nav"
 >
-  <div class="banner-navbar-top">
+  <!-- <div class="banner-navbar-top">
     <div class="navbar-top-wrapper-left">
       <img
         src="https://assets-global.website-files.com/5f1797b724a35d807050c3d9/65c04e6d148e4c2b54209ca2_Notification-Mega%20Phone.svg"
@@ -36,21 +36,21 @@
     <div class="paragraph-s-rebrand font-weight-600">
       <a href="/terms-and-conditions" class="link-2">Check updates</a>
     </div>
-  </div>
+  </div> -->
   <div class="navbar-container-rebrand">
-    <Three_HeaderLogo></Three_HeaderLogo>
+    <Three_HeaderI></Three_HeaderI>
     <nav role="navigation" class="navmenu-v3 w-nav-menu">
-      <One_Dropdown></One_Dropdown>
+      <P_One_Dropdown></P_One_Dropdown>
       <div class="div-block-19">
-        <Three_HeaderLink></Three_HeaderLink>
-        <One_Dropdown></One_Dropdown>
+        <!-- <Three_HeaderL></Three_HeaderL> -->
+        <!-- <P_One_Dropdown></P_One_Dropdown> -->
       </div>
       <a
         href="https://app.skin.software/login?redirect=%2Fprofile"
         class="nav-login-rebrand hide-desktop w-button">Start consult</a
       >
     </nav>
-    <div class="nav-right-wrapper-rebrand nav-v3-right">
+    <!-- <div class="nav-right-wrapper-rebrand nav-v3-right">
      
       <div
         data-node-type="commerce-cart-wrapper"
@@ -82,7 +82,7 @@
             0
           </div></a
         >
-        <One_Cart></One_Cart>
+        <P_One_HeaderCart></P_One_HeaderCart>
       </div>
       <div
         id="nav-button"
@@ -101,7 +101,7 @@
         <div class="navmenu-line _3"></div>
       </div>
 
-    </div>
+    </div> -->
   </div>
   <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
 </div>

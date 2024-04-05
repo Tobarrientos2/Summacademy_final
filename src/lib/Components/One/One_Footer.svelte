@@ -1,16 +1,21 @@
 <script>
-	import Three_Link2 from './../Three/Three_Link2.svelte';
-	import Three_Logo from './../Three/Three_Logo.svelte';
-	import Three_SocialIcon from './../Three/Three_SocialIcon.svelte';
-	import Two_Footer2 from './../Two/Two_Footer2.svelte';
-	import Two_Footer from './../Two/Two_Footer.svelte';
-    import Two_Footer3 from './../Two/Two_Footer3.svelte';
+	import Two_FooterH from './../Two/Two_FooterH.svelte';
+    import Three_FooterI from '../Three/Three_FooterI.svelte';
+	import Three_FooterS from '../Three/Three_FooterS.svelte';
+	import Three_FooterL from '../Three/Three_FooterL.svelte';
+    import Three_FooterL2 from './../Three/Three_FooterL2.svelte';
+	import Three_HeaderL2 from './../Three/Three_HeaderL2.svelte';
+    import { filterSlugs } from '$lib/utils/utils';
+    import { getTm } from '$lib/utils/utils';
 
-    export let v_txt_1 = 'v_txt_1';
-    export let v_txt_2 = 'v_txt_2';
-    export let v_txt_3 = 'v_txt_3';
-    export let v_img = 'v_img';
-    export let v_src = 'v_src';
+    import { getSc } from '$lib/utils/utils';
+    
+    let tm1 = getTm();
+
+    let sc1 = getSc();
+
+    let categories_arr = filterSlugs(sc1.arr);
+   
 </script>
 
 <div class="footer sos-not-scroll">
@@ -19,34 +24,34 @@
             id="w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17bb-e0cb17b9"
             class="container-rebrand footer-flex justify-endtoend"
         >
-            <Three_Logo></Three_Logo>
+            <Three_FooterI {tm1}></Three_FooterI>
             <div
                 class="footer-socialmedia-wrapper flex-horizontal-rebrand margin-bot-48"
             >
-                <Three_SocialIcon></Three_SocialIcon>
-                <Three_SocialIcon></Three_SocialIcon>
-                <Three_SocialIcon></Three_SocialIcon>
+                <!-- <Three_FooterS></Three_FooterS>
+                <Three_FooterS></Three_FooterS>
+                <Three_FooterS></Three_FooterS> -->
             </div>
            
         </div>
         <div
-            id="w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17c5-e0cb17b9"
-            class="container-rebrand"
+        id="w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17c5-e0cb17b9"
+        class="container-rebrand"
         >
-            <Two_Footer></Two_Footer>
-            <div class="div-block-30">
-                <Two_Footer2></Two_Footer2>
-                <Two_Footer2></Two_Footer2>
-                <Two_Footer2></Two_Footer2>
-            </div>
+        <Two_FooterH ></Two_FooterH>
+        <div class="div-block-30">
+            {#each categories_arr as obj}
+            <Three_FooterL2 {obj}></Three_FooterL2>
+            {/each}
+         
+            <!-- Two_FooterH -->
         </div>
+    </div>
         <div
             id="w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17d7-e0cb17b9"
             class="container-rebrand footer-grid margin-top-xs flex-layout-left"
         >
-         <Two_Footer3></Two_Footer3>
-         <Two_Footer3></Two_Footer3>
-         <Two_Footer3></Two_Footer3>
+       
         </div>
         
        
@@ -58,11 +63,12 @@
             id="w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17e6-e0cb17b9"
             class="privacy-policy-wrapper max-width-100 flex-horizontal-center"
         >
-            <Three_Link2 bar={true}></Three_Link2>
-            <Three_Link2 bar={true}></Three_Link2>
-            <Three_Link2 bar={false}></Three_Link2>
 
-            
+            <!-- <Three_FooterL bar={true}></Three_FooterL>
+            <Three_FooterL bar={true}></Three_FooterL>
+            <Three_FooterL bar={false}></Three_FooterL>
+
+             -->
         </div>
         <div
             id="w-node-_153812fb-473f-6c51-abf1-5f340e1130dc-e0cb17b9"
@@ -97,3 +103,10 @@
         </div>
     </div>
 </div>
+
+
+<style>
+    #w-node-_6c445a4a-c101-03db-9a87-a31ce0cb17c5-e0cb17b9{
+        grid-area: auto;
+    } 
+</style>

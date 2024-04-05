@@ -1,6 +1,6 @@
 <script>
-	import Two_CallToActionImage from '../Two/Two_CallToAction.svelte';
-	import Three_CallToActionImage from './../Three/Three_CallToActionImage.svelte';
+	import Two_CallToActionHBP from '../Two/Two_CallToActionHBP.svelte';
+	import Three_CallToActionI from '../Three/Three_CallToActionI.svelte';
     export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
     export let v_txt_3 = 'v_txt_3';
@@ -10,6 +10,6 @@
 
 
 <div id="cta-get-started" class="section-rebrand prefooter-section v2">
-    <Three_CallToActionImage></Three_CallToActionImage>
-    <Two_CallToActionImage></Two_CallToActionImage>
+    <Three_CallToActionI></Three_CallToActionI>
+    <Two_CallToActionHBP></Two_CallToActionHBP>
 </div>

@@ -1,10 +1,10 @@
 <script>
-	import Two_CategoriesHeading from '../Two/Two_CategoriesHeading.svelte';
+	import Two_CategoriesH from '../Two/Two_CategoriesH.svelte';
 
-	import One_Slider2 from './One_Slider2.svelte';
-	import One_Slider from './One_Slider.svelte';
-	import Three_CategoriesButton from '../Three/Three_CategoriesButton.svelte';
-	import Two_CategoriesParagraph from '../Two/Two_CategoriesParagraph.svelte';
+	import P_One_Slider from './P_One_Slider.svelte';
+	import P_One_Slider2 from './P_One_Slider2.svelte';
+	import Three_CategoriesB from '../Three/Three_CategoriesB.svelte';
+	import Two_CategoriesP from '../Two/Two_CategoriesP.svelte';
     import { _categorizeByPrice_arr_txt_o } from '$lib/utils/prices';
 
     export let v_txt_1 = 'v_txt_1';
@@ -36,7 +36,6 @@
         
     }
 
-    console.log(filterByPrice(arr))
 
  
     let x = ''
@@ -45,30 +44,30 @@
         x = e.detail
     } 
 
-    export let type = 1;
+    export let type = 2;
 
 </script>
 
 <div class="section-rebrand overflow-hidden">
     <div class="container-rebrand-2 flex-left">
-       <Two_CategoriesHeading></Two_CategoriesHeading>    
+       <Two_CategoriesH></Two_CategoriesH>    
         <div
             id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd3517-5875fff3"
             class="flex-horizontal-rebrand home-product-categories-grid"
         >
-
-           <Two_CategoriesParagraph></Two_CategoriesParagraph>
+<!-- 
+           <Two_CategoriesP></Two_CategoriesP>
            {#each filterByPrice(arr) as obj}
-           <Three_CategoriesButton on:categoryChanged={eventReceived} {obj} ></Three_CategoriesButton>
+           <Three_CategoriesB on:categoryChanged={eventReceived} {obj} ></Three_CategoriesB>
            {/each}
-        
+         -->
           
            
         </div>
         {#if type = 1 }
-        <One_Slider {...sc1} x={x} ></One_Slider>
+        <P_One_Slider2 {...sc1} x={x} ></P_One_Slider2>
         {:else if type = 2}
-        <One_Slider2></One_Slider2>
+        <P_One_Slider></P_One_Slider>
         {:else}
         {/if}
         

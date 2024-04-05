@@ -1,8 +1,8 @@
 <script>
     import { onMount } from "svelte";
-	import Three_HeroSlider from './../Three/Three_HeroSlider.svelte';
+	import Three_HeroI from '../Three/Three_HeroI.svelte';
     import ThreeGifHero from "../Three/Three_GifHero.svelte";
-	import Two_Hero from "./../Two/Two_Hero.svelte";
+	import Two_HeroHPB from "../Two/Two_HeroHPB.svelte";
 
 	export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
@@ -27,7 +27,7 @@
 				style="transform: translate3d(-592px, 0px, 0px); transition-duration: 0ms;"
 			>
 				{#each arr.slice(1,4) as obj}
-				<Three_HeroSlider obj={obj}></Three_HeroSlider>
+				<Three_HeroI obj={obj}></Three_HeroI>
 				{/each}
 			</div>
 			<span
@@ -59,7 +59,7 @@
 				aria-disabled="false"
 			></div>
 		</div>
-		<Two_Hero {...bf1}></Two_Hero>
+		<Two_HeroHPB {...bf1}></Two_HeroHPB>
 	</div>
 	<!-- <ThreeGifHero number={1}></ThreeGifHero> -->
 	<!-- <ThreeGifHero number={2}></ThreeGifHero> -->

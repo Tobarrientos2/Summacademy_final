@@ -1,16 +1,849 @@
 <!doctype html>
-<html >
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" >
-			<div style="display: contents">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script
+			src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f1797b724a35d807050c3d9"
+			type="text/javascript"
+			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			crossorigin="anonymous"></script><script
+			src="https://assets-global.website-files.com/5f1797b724a35d807050c3d9/js/software-staging.c8f144aad.js"
+			type="text/javascript"></script>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+				// URL changes for staging/prod envs:
+				const prodEnv = 'https://www.skin.software';
+				const prodApp = 'app.skin.software';
+				const origin = window.location.origin;
+				if (origin !== prodEnv) {
+				  const links = document.querySelectorAll(`a[href^="https://${prodApp}"]`);
+				  for (let i = 0; i < links.length; i++) {
+					const path = links[i].href.replace(`https://${prodApp}`, '');
+					const newOrigin = origin.split('.')[0] + "." + prodApp
+					links[i].href = newOrigin + path;
+				  }
+				}
+				 
+			  // Lock body scroll when navbar open
+			  document.querySelectorAll("[class*=hamburger]").forEach(el => {
+				  el.addEventListener('click', () => {
+				  document.body.style.setProperty('overflow', 'hidden');
+				});
+			  });
+			  
+			  
+			  // Allow body scroll when navbar closed
+			  document.querySelectorAll("[class*=navbar-close]").forEach(el => {
+				  el.addEventListener('click', () => {
+				  document.body.style.setProperty('overflow', 'auto');
+				});
+			  });
+			  
+				// Show opaque nav if navigating back to landing page
+				const navbarBackdrop = document.querySelector('.navbar-backdrop');
+				const hamburgerBoxDark = document.querySelector('.hamburger-box.dark');
+				const hamburgerBoxLight = document.querySelector('.hamburger-box.light');
+				const countryBoxDark = document.querySelector('.country-box.dark');
+				const countryBoxLight = document.querySelector('.country-box.light');
+				const darkLogo = document.querySelector('.dark-logo');
+				const lightLogo = document.querySelector('.light-logo');
+			   
+				if (window.scrollY > 50) {
+				  [navbarBackdrop].map(el => {
+					el.style.opacity = 1;
+				  });
+				  [hamburgerBoxDark, countryBoxDark].map(el => {
+					el.style.display = 'flex';
+				  });
+				  [darkLogo].map(el => {
+					el.style.display = 'block';
+				  });
+				  [hamburgerBoxLight, countryBoxLight, lightLogo].map(el => {
+					el.style.display = 'none';
+				  });
+				}
+				
+			  </script>
+
+		<script>
+			  // UTM cookies
+			  const utmParams = [
+				'utm_name',
+				'utm_source',
+				'utm_medium',
+				'utm_term',
+				'utm_content',
+				'utm_campaign',
+			  ];
+			  
+			  function getCookie(name) {
+				const value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+				return value ? value[2] : null;
+			  }
+			  
+			  function setCookie(name, value, expires) {
+				  document.cookie = name + "=" + value + ";path=/app;expires=" + expires;
+			  }
+			  
+			  function updateExpiration(name, expires) {
+				const existingValue = getCookie(name);
+				if (existingValue) {
+				  setCookie(name, existingValue, expires)
+				}
+			  };
+			  
+			  function removeCookies() {
+				for (let index = 0; index < utmParams.length; index += 1) {
+				  const param = utmParams[index];
+				  setCookie(param, '', new Date(null));
+				}
+			  };
+			  
+			  const now = new Date();
+			  const queryParams = new URLSearchParams(window.location.search);
+			  const expires = new Date(now.setMinutes(now.getMinutes() + 30));
+			  let removed = false;
+			  
+			  for (let index = 0; index < utmParams.length; index += 1) {
+				const param = utmParams[index];
+				updateExpiration(param, expires);
+			  
+				const value = queryParams.get(param)
+			  
+				if (value) {
+				  if (!removed) {
+					removeCookies();
+					removed = true;
+				  }
+				  setCookie(param, value, expires);
+				}
+			  }
+			  
+			  </script>
+
+		<!-- Filtered testimonial plugin -->
+		<script defer
+			src="https://cdn.finsweet.com/files/cmslibrary-v1.7.js"></script>
+		<script>
+			  (function() {
+				  // create a new Library instance and store it in a variable called "projectsGrid"
+				  var projectsGrid = new FsLibrary('.scrollable-testimonial-list')
+				
+				  // define our filter group(s)
+				  var myFilters = [
+				  {
+					  filterWrapper: ".filters-wrapper",
+					  filterType: "exclusive"
+				  }
+			  ]
+			   // run filter on our instance
+				  projectsGrid.filter({
+					  filterArray: myFilters, // the filter group name we defined
+				  activeClass: 'filter-active', // the active class we give to our buttons
+				   filterReset:'.reset',
+				  loadAll: true,
+					  animation: {
+						  enable: true,
+						  duration: 200,
+						  easing: 'ease-out',
+						  effects: 'fade translate(0px,20px)'
+						  }
+				})
+			  })();
+			  </script>
+
+		<!-- cart functionality -->
+
+		<script>
+				window.addEventListener('DOMContentLoaded', ()=>{
 			
-	</body>
+			
+				$(".add_to_cart_button").click(()=>{
+					document.querySelector(".slider_block_cart_footer").innerHTML = "";
+			
+					const slider_component = document.querySelector(".slider_comp");
+					window.saveArray = new Array();
+					let sliderCartClone = slider_component.cloneNode(true);
+					saveArray.push(sliderCartClone.outerHTML);
+					localStorage["slide"] = JSON.stringify(saveArray);
+				}
+				)
+				var cart_list = document.getElementById('cart_list');
+			
+				const config = {
+					childList: true,
+				};
+			
+				const callback = ()=>{
+			
+					if (cart_list.children.length > 0) {
+			
+					  /*  if (localStorage.getItem('slide')) {
+			
+							document.querySelector(".bundle_block").style.display = 'block';
+							document.querySelector(".slider_block_cart_footer").innerHTML = "";
+							let tempsave = JSON.parse(localStorage["slide"]);
+							for (var i = 0; i < tempsave.length; i++) {
+								let element = document.createElement('div');
+								element.innerHTML = tempsave[i];
+								document.querySelector(".slider_block_cart_footer").appendChild(element);
+							}
+			
+							Webflow.require('slider').redraw();
+							if (document.querySelector(".w-slide").innerHTML.trim().length == 0) {
+								document.querySelector(".bundle_block").style.display = 'none';
+							}
+						} */
+			
+						//console.log('A child node has been added or removed.');
+						document.querySelectorAll('.cart_item').forEach(cart_item=>{
+			
+							cart_item.querySelector('.qty_min').addEventListener('click', ()=>{
+								let input_val = Number(cart_item.querySelector('.cart_qty_input').value);
+			
+								let input = cart_item.querySelector('.cart_qty_input');
+								input.value = input_val - 1;
+								input.dispatchEvent(new Event('change'));
+			
+								console.log('OK_min');
+							}
+							);
+							cart_item.querySelector('.qty_plus').addEventListener('click', ()=>{
+								let input_val = Number(cart_item.querySelector('.cart_qty_input').value);
+			
+								let input = cart_item.querySelector('.cart_qty_input');
+								input.value = input_val + 1;
+								input.dispatchEvent(new Event('change'))
+			
+								console.log('OK_plus');
+							}
+							);
+			
+						}
+						);
+			
+						/*  // discount and bundle 
+						let total_cart_val = Number(document.querySelector(".total_cart_val").innerText.replace(/\D+/g, ""));
+						let limit_val = Number(document.querySelector(".limit_val").innerText.replace(/\D+/g, ""));
+						let discont_val = Number(document.querySelector(".discont_val").innerText.replace(/\D+/g, ""));
+						if (total_cart_val >= limit_val) {
+							total_cart_val = total_cart_val - discont_val;
+							document.querySelector(".total_cart_val").innerText = "$ " + total_cart_val;
+							localStorage.setItem("code_bur", "DESCBUR");
+							document.querySelector(".cart_text_discount").innerText = "Automatic discount - $" + discont_val;
+							document.querySelector(".cart_line_discount").style.display = 'flex';
+						} else {
+							if (localStorage.getItem("code_bur")) {
+								document.querySelector(".cart_line_discount").style.display = 'none';
+								localStorage.setItem("code_bur", "DESCNULLBUR");
+							}
+						} */
+					} else {
+						//localStorage.removeItem('slide');
+						//document.querySelector(".bundle_block").style.display = 'none';
+					}
+			
+				}
+				;
+			
+				const mutation_list = new MutationObserver(callback);
+			
+				mutation_list.observe(cart_list, config);
+			
+				}
+				);
+				</script>
+
+		<script>
+				$('.input-number-increment').click(function() {
+			  var $input = $(this).parents('.input-number-group').find('.input-number');
+			  var val = parseInt($input.val(), 10);
+			  $input.val(val + 1);
+				});
+			
+				$('.input-number-decrement').click(function() {
+			  var $input = $(this).parents('.input-number-group').find('.input-number');
+			  var val = parseInt($input.val(), 10);
+			  $input.val(Math.max(val - 1, 1));
+				})
+			
+				var ourObserver = new MutationObserver(function() {
+					
+			  var n = $('.price-hidden').length;
+			  var i;
+			  for(i = 0; i < n; i++)
+			  {
+				  var valueList = $('.cart_qty_input');
+				var hiddenPriceList = $('.price-hidden');
+				var shownPriceList = $('.price-show');
+				var fica = hiddenPriceList[i].innerText.substring(1);
+				var priceNum = parseInt(fica);
+				var itemCount = valueList[i].value;
+				var totItemPrice = itemCount * priceNum;
+				shownPriceList[i].innerText = ('$' + totItemPrice)
+			  }
+				});
+			
+				var totPrice = document.querySelector(".total-price");
+				ourObserver.observe(totPrice, {
+				subtree: true,
+				childList: true
+				});
+			
+			</script>
+
+		<script>
+			
+			
+			  /*
+			  var Webflow = Webflow || [];
+			Webflow.push(function () {
+				 document.getElementById('w-nav-overlay-0').setAttribute("scroll", "enable")
+				document.getElementById('w-nav-overlay-0').addEventListener("click", function(){
+				  document.getElementById('close-nav-arrow').style.opacity = 0
+			  })
+			}); */
+			</script>
+
+		<script>
+			  //Script for Navbar v3
+			$(document).ready(function(){
+				if ($(window).width() >= 768) {
+				   
+			document.getElementById('navcards-1').addEventListener('mouseover', function(){
+				document.getElementById('navcards-image-default-skin').style.display='none';
+				document.getElementById('navcards-image-hover-skin').style.display='block';  
+			})
+			
+			document.getElementById('navcards-1').addEventListener('mouseout', function(){
+				document.getElementById('navcards-image-hover-skin').style.display='none';
+			  document.getElementById('navcards-image-default-skin').style.display='block';
+			})
+			
+			document.getElementById('navcards-2').addEventListener('mouseover', function(){
+				document.getElementById('navcards-image-default-ing').style.display='none';
+				  document.getElementById('navcards-image-hover-ing').style.display='block';
+			})
+			
+			document.getElementById('navcards-2').addEventListener('mouseout', function(){
+				document.getElementById('navcards-image-hover-ing').style.display='none';
+				  document.getElementById('navcards-image-default-ing').style.display='block';
+			})
+			
+			
+			document.getElementById('navcards-3').addEventListener('mouseover', function(){
+				document.getElementById('navcards-image-default-what').style.display='none';
+			  document.getElementById('navcards-image-hover-what').style.display='block';
+			})
+			
+			document.getElementById('navcards-3').addEventListener('mouseout', function(){
+				document.getElementById('navcards-image-hover-what').style.display='none';
+			  document.getElementById('navcards-image-default-what').style.display='block';
+			})
+			
+			}//end of IF
+			});//end of FUNCTION
+			
+			  //Code for Navmenu close when click on Grey BG for Desktop
+			document.getElementById('bg-grey-nav').addEventListener('click', function(){
+				$(".w-dropdown").trigger("w-close");
+			 })
+			 document.getElementById('bg-grey-nav2').addEventListener('click', function(){
+				$(".w-dropdown").trigger("w-close");
+			 })
+			 //End
+			
+			</script>
+
+		<script>
+			  flowBaseCookie('#cookieBlock', '#accept', '#clr', 1);
+			</script>
+
+		<script>
+			// cart script
+			  
+			  // Select the node that will be observed for mutations
+			const targetNode = document.getElementById("cart_list");
+			
+			// Options for the observer (which mutations to observe)
+			const config = { attributes: true, childList: true, subtree: true };
+			
+			// Callback function to execute when mutations are observed
+			const callback = (mutationList, observer) => {
+			  for (const mutation of mutationList) {
+				if (mutation.type === "childList") {
+				  var childCount = targetNode.children.length;
+				if (childCount > 2){
+			document.getElementById("default-recommended-cart").style.display="none";
+			} else {
+			document.getElementById("default-recommended-cart").style.display="block";
+			}
+				}
+			  }
+			};
+			
+			// Create an observer instance linked to the callback function
+			const observer = new MutationObserver(callback);
+			
+			// Start observing the target node for configured mutations
+			observer.observe(targetNode, config);
+			
+			
+			window.addEventListener("load", function(){
+				 var childCount = targetNode.children.length;
+				if (childCount > 2){
+			document.getElementById("default-recommended-cart").style.display="none";
+			} else {
+			document.getElementById("default-recommended-cart").style.display="block";
+			}
+			})
+			
+			
+			$( document ).ready(function() {
+			var defaultNewParent = document.getElementById('default-recommended-cart');
+			var defaultOldParent = document.getElementById('default-cart');
+			
+			while (defaultOldParent.childNodes.length > 0) {
+				defaultNewParent.appendChild(defaultOldParent.childNodes[0]);
+			}
+			
+			var emptyNewParent = document.getElementById('empty-recommended-cart');
+			var emptyOldParent = document.getElementById('empty-cart');
+			
+			while (emptyOldParent.childNodes.length > 0) {
+				emptyNewParent.appendChild(emptyOldParent.childNodes[0]);
+			}
+			
+			  
+			});
+			</script>
+		<script>
+			var cartPrice = document.getElementById('total-price');
+			var observerPrice = new MutationObserver(() => {
+				var cartPriceText = cartPrice.textContent.slice(1);  
+				var cartPriceInt = parseInt(cartPriceText.replace(',', '')); 
+			
+				if (cartPriceInt > 48) {
+					document.getElementById('shipping-copy').textContent = "You’ve got free shipping!";
+				} else {
+					document.getElementById('shipping-copy').textContent = "Free shipping on all orders above $49!";
+				}
+			});
+			
+			var configPrice = {
+				subtree: true,
+				characterDataOldValue: true,
+				childList: true,
+				characterData: true,
+			};
+			observerPrice.observe(cartPrice, configPrice);
+			
+			</script>
+		<script>
+			window.addEventListener("load", () => {
+			  const recommendedItemsContainer = document.querySelector(
+				"div#default-recommended-cart div.w-dyn-items"
+			  );
+			  
+			  const cartItemsContainer = document.getElementById("cart_list");
+			  const recommendContainer = document.querySelector("div#default-recommended-cart");
+			
+			  const onCartChange = (mutations) => {
+				// getting cart items
+				const cartItems = new Set();
+				const cartItemEls = cartItemsContainer.querySelectorAll("div.cart_item");
+				cartItemEls.forEach((cartItemEl) => {
+				  const nameEl = cartItemEl.querySelector(
+					".w-commerce-commercecartproductname"
+				  );
+				  if (nameEl) {
+					const productName = nameEl.textContent.trim();
+					cartItems.add(productName);
+				  }
+				});
+			
+				// iterating recommended items and removing those already in cart
+				if (recommendedItemsContainer) {
+				  const recommendedItemEls =
+					recommendedItemsContainer.querySelectorAll("div.w-dyn-item");
+				  let flag = true; // flag to specify if all recommended items have been removed
+				  let counter = 0,
+					limit = 1;
+				  recommendedItemEls.forEach((recommendedItemEl) => {
+					const nameEl = recommendedItemEl.querySelector(
+					  "div.description-column div.cart-text-wrapper > div"
+					);
+					if (nameEl) {
+					  const productName = nameEl.textContent.trim();
+					  if (cartItems.has(productName) || counter >= limit)
+						recommendedItemEl.style.display = "none";
+					  else {
+						recommendedItemEl.style.display = "block";
+						flag = false;
+						counter++;
+					  }
+					}
+				  });
+			
+				  recommendedItemsContainer.style.display = flag ? "none" : "block";
+				}
+				//hide recommend heading when there are no recommend items
+				if(recommendedItemsContainer.children[2].style.display == "block"){
+					  recommendContainer.style.display = "none";
+				}else{
+					const recommendHeading = recommendContainer.querySelector("div.cart-recommended-heading.v2");
+					  recommendHeading.style.display = "block";
+				}
+			  };
+			
+			  const observer = new MutationObserver(onCartChange);
+			  const options = {
+				childList: true,
+			  };
+			  observer.observe(recommendedItemsContainer, options);
+			  observer.observe(cartItemsContainer, options);
+			  onCartChange();
+			});
+			</script>
+
+		<script>
+			  //DO NOT DELETE
+			  //THIS FUNCTION PRESERVES UTM PARAMETERS. FOR FULL DOCUMENTATION PLEASE ASK CINDY CAI OR JAIDYN LAI. THIS IS LOCATED IN NOTION GROWTH > CONTENT MARKETING > DOCUMENTATION > WEBFLOW CUSTOM CODE > PRESERVE UTM TAGS
+			$(document).ready((function(){var a="skin.software";function e(){var e=new URLSearchParams(window.location.search),n=new URLSearchParams;for(let[a,t]of e.entries())a.includes("name")||t.includes("name")||n.append(a,t);var t=n.toString();t.length>0&&$("a:not([data-modified])").each((function(){var e=$(this).attr("href");if(e)try{var n=new URL(e,window.location.href);if(n.hostname===a||n.hostname.endsWith("."+a)){var r=n.origin+n.pathname;n.search?(r+=n.search,n.search.includes(t)||(r+="&"+t)):r+="?"+t,n.hash&&(r+=n.hash),$(this).attr("href",r),$(this).attr("data-modified",!0)}}catch{}}))}e();var n=0,t=setInterval((function(){n>=6?clearInterval(t):(e(),n++)}),500)}));
+			</script><script async
+			src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-
+			cmsload@1/cmsload.js"></script>
+		<script async
+			src="https://storage.googleapis.com/euc-landing-site-content/Software/reviews_tabs_swiper.js"></script>
+
+		<script>
+				var subheroSwiper = new Swiper('#subhero-swiper', {
+			  slidesPerView: 1,
+				pagination: {
+					el: '.subhero-pagination',
+					clickable: true,
+				bulletClass: "subhero-bullet",
+				bulletActiveClass:"subhero-bullet-active"
+				},
+				navigation: {
+					nextEl: '#hero-next',
+					prevEl: '#hero-prev'
+				},
+				autoplay: {
+				delay: 5000,
+					disableOnInteraction: false
+			  },
+				loop: false,
+				watchSlidesProgress: true
+			});
+			var categoryButton = document.querySelectorAll(".home-product-categories-button")
+			categoryButton = [...categoryButton]
+			categoryButton.forEach(item => {
+				item.addEventListener("click", function(){
+					document.querySelector(".home-product-categories-button.active-button").classList.remove("active-button")
+					this.classList.add("active-button")
+					var wrappers = document.querySelectorAll(".home-product-wrapper")
+					wrappers.forEach(wrapper => {
+						setTimeout(function(){
+							wrapper.style.display = "none"
+						},250)
+						wrapper.style.opacity = 0
+					})
+					setTimeout(function(){
+						wrappers[categoryButton.indexOf(item)].style.display = "block"
+						wrappers[categoryButton.indexOf(item)].style.opacity = 100
+					},250)
+				})
+			})
+			
+			
+			  categoryButton[0].click()
+			
+			</script>
+
+		<script>
+			var secondCart = document.querySelectorAll('.add-to-cart-homepage')
+			secondCart.forEach(element => {
+				element.addEventListener("click", function () {
+					this.nextSibling.click()
+				})
+			});
+			</script>
+		<script>  
+				var acneSwiper = new Swiper('#acne-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				grabCursor: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#acne-next',
+						prevEl: '#acne-prev'
+					},
+				scrollbar: {
+					el: '#acne-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.acne-combo",
+				  dragSize: 50
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+			  
+			  acneSwiper.prependSlide(document.getElementById("acne-formula"))
+				acneSwiper.slideTo(0)
+			  
+			  
+			  var ageingSwiper = new Swiper('#ageing-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				grabCursor: true,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#ageing-next',
+						prevEl: '#ageing-prev'
+					},
+				scrollbar: {
+					el: '#ageing-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.ageing-combo",
+				  dragSize: 50
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+			  
+			  ageingSwiper.prependSlide(document.getElementById("ageing-formula"))
+				ageingSwiper.slideTo(0)
+			  
+			  
+			  var pigmentationSwiper = new Swiper('#pigmentation-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				grabCursor: true,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#pigmentation-next',
+						prevEl: '#pigmentation-prev'
+					},
+				scrollbar: {
+					el: '#pigmentation-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.pigmentation-combo",
+				  dragSize: 50
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+			  
+			  pigmentationSwiper.prependSlide(document.getElementById("pigmentation-formula"))
+				pigmentationSwiper.slideTo(0)
+			  
+			  
+			  var everydayCareSwiper = new Swiper('#everyday-care-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				grabCursor: true,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#care-next',
+						prevEl: '#care-prev'
+					},
+				scrollbar: {
+					el: '#care-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.care-combo",
+				  dragSize: 50
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+			  
+			  everydayCareSwiper.prependSlide(document.getElementById("everyday-care-formula"))
+				everydayCareSwiper.slideTo(0)
+			  
+			  
+			  
+				 if(window.innerWidth < 768){
+			 
+				var IngredientsCareSwiper = new Swiper('#ingredients-swiper', {
+				  slidesPerView: 1.2,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				grabCursor: true,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#ingredients-next',
+						prevEl: '#ingredients-prev'
+					},
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4,
+					grabCursor: false,
+					}
+				  },
+			  })
+				  
+			
+			}
+				  
+				
+			</script>
+
+		<script>
+			
+			var productSwipers = new Swiper('#product-swiper', {
+				  slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				threshold: 20,
+				observeParents: true,
+				observe: true,
+				observeSlideChildren: true,
+				grabCursor: true,
+				a11y: false,
+				navigation: {
+						nextEl: '#product-next',
+						prevEl: '#product-prev'
+					},
+				scrollbar: {
+					el: '#product-scrollbar',
+					draggable: true,
+				  dragClass: "swiper-scrollbar-drag.product",
+				  dragSize: "auto"
+				  },
+				breakpoints: {
+					0: {
+					  slidesPerView: 1.3
+					},
+					480: {
+					  slidesPerView: 1.3
+					},
+				  767: {
+					  slidesPerView: 3
+					},
+				  992: {
+					  slidesPerView: 4
+					}
+				  },
+			  })
+			  
+			  productSwiper.prependSlide(document.getElementById("formula"))
+				productSwiper.slideTo(0)
+			
+			</script>
+
 	
+						<script
+			type="text/javascript"
+			id>!function(b,e,f,g,a,c,d){b.saq||(a=b.saq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._saq||(b._saq=a),a.push=a,a.loaded=!0,a.version="1.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://tags.srv.stackadapt.com/events.js");saq("ts","r8oG5WvlztB6JVQstdqfcw");</script>
+		<script type="text/javascript" id
+			src="https://www.googletagmanager.com/gtag/js?id=AW-11250384394"></script>
+
+	</body>
+
 </html>

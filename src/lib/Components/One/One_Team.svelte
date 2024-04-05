@@ -1,13 +1,9 @@
 <script>
-	import Two_Team3 from './../Two/Two_Team3.svelte';
-	import Two_Team2 from './../Two/Two_Team2.svelte';
-	import Two_Team from './../Two/Two_Team.svelte';
+	import Two_TeamIHP from '../Two/Two_TeamIHP.svelte';
+	import Two_TeamP from '../Two/Two_TeamP.svelte';
+	import Two_TeamHP from '../Two/Two_TeamHP.svelte';
 
-    export let v_txt_1 = 'v_txt_1';
-    export let v_txt_2 = 'v_txt_2';
-    export let v_txt_3 = 'v_txt_3';
-    export let v_img = 'v_img';
-    export let v_src = 'v_src';
+   export let tm1 = {}
 
 </script>
 
@@ -17,10 +13,12 @@
             id="w-node-_025fa836-9cb0-f235-4e5d-06b0cc8f83c0-cc8f83be"
             class="container-rebrand doctors-column v2"
         >
-            <Two_Team></Two_Team>
-            <Two_Team2></Two_Team2>
-            <Two_Team2></Two_Team2>
-            <Two_Team2></Two_Team2>
+            <Two_TeamHP tm1={tm1}></Two_TeamHP>
+
+            {#each tm1.arr as obj}
+            <Two_TeamP obj={obj}></Two_TeamP>
+            {/each}
+            
             
         </div>
         <div
@@ -29,9 +27,10 @@
         >
             <div class="doctors-scroll-control">
                 <div class="flex-horizontal-rebrand align-stretch mobile-top">
-                 <Two_Team3></Two_Team3>
-                 <Two_Team3></Two_Team3>
-                 <Two_Team3></Two_Team3>
+                    {#each tm1.arr as obj}
+                    <Two_TeamIHP obj={obj}></Two_TeamIHP>
+                    {/each}
+                 
                 </div>
             </div>
         </div>
