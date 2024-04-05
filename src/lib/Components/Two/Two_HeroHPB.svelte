@@ -21,5 +21,5 @@
             <p class="paragraph-l-rebrand margin-bot-l-rebrand max-width-400">
                 {bf1.v_txt_2}
             </p>
-            <Three_Button></Three_Button>
+            <!-- <Three_Button></Three_Button> -->
 </div>

@@ -64,10 +64,11 @@
           
            
         </div>
+        
         {#if type = 1 }
         <P_One_Slider2 {...sc1} x={x} ></P_One_Slider2>
         {:else if type = 2}
-        <P_One_Slider></P_One_Slider>
+        <P_One_Slider2></P_One_Slider2>
         {:else}
         {/if}
         
