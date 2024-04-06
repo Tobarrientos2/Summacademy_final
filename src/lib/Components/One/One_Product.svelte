@@ -7,6 +7,7 @@
     import Three_ProductC from "../Three/Three_ProductC.svelte";
     import P_One_Navigator from "./P_One_Navigator.svelte";
     import Two_ProductHP from "../Two/Two_ProductHP.svelte";
+    import { onDestroy, onMount } from 'svelte';
 
     export let v_txt_1 = "v_txt_1";
     export let v_txt_2 = "v_txt_2";
@@ -14,11 +15,22 @@
     export let v_img = "v_img";
     export let v_src = "v_src";
     export let obj = {};
+    
 
-    if (typeof window !== "undefined" && window.sessionStorage) {
-        obj = sessionStorage.getItem("obj");
-        obj = JSON.parse(obj);
-    }
+    onMount(() => {
+        if (typeof window !== "undefined" && window.sessionStorage) {
+            obj = localStorage.getItem("obj");
+            obj = JSON.parse(obj);
+        }
+
+    })
+
+    onDestroy(() => {
+        if (typeof window !== "undefined" && window.sessionStorage) {
+            obj = localStorage.removeItem("obj");
+        }
+    })
+
 </script>
 
 {#if Object.keys(obj).length > 0}

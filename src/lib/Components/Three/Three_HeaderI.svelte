@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
      export let v_txt_1 = 'v_txt_1';
     export let v_txt_2 = 'v_txt_2';
     export let v_txt_3 = 'v_txt_3';
@@ -8,7 +9,7 @@
 
 <div class="navbar-logo-rebrand">
     <a
-        href="/"
+    on:click={() => location.href = "/"}
         aria-current="page"
         class="navbar-logo-rebrand-wrapper w-nav-brand w--current"
         aria-label="home"
