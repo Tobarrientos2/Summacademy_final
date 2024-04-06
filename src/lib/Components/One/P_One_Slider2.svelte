@@ -21,52 +21,8 @@
 
 
 
-    onMount(() => {
-				swiper = new Swiper('#acne-swiper', {
-				  slidesPerView: 4,
-				slidesPerGroup: 1,
-				spaceBetween: 16,
-				threshold: 20,
-				observeParents: true,
-				observe: true,
-				observeSlideChildren: true,
-				grabCursor: true,
-				a11y: false,
-				navigation: {
-						nextEl: '#acne-next',
-						prevEl: '#acne-prev'
-					},
-				scrollbar: {
-					el: '#acne-scrollbar',
-					draggable: true,
-				  dragClass: "swiper-scrollbar-drag.acne-combo",
-				  dragSize: 50
-				  },
-				breakpoints: {
-					0: {
-					  slidesPerView: 1.3
-					},
-					480: {
-					  slidesPerView: 1.3
-					},
-				  767: {
-					  slidesPerView: 3
-					},
-				  992: {
-					  slidesPerView: 3
-					},
-				  992: {
-					  slidesPerView: 4
-					}
-				  },
-			  })
-              
-      
-
-           
-  })
-				onDestroy(() => {
-        })
+    
+	
 
 
 
@@ -80,7 +36,7 @@
 >
     <div
         id="acne-swiper"
-        class="home-product-swiper-wrapper w-dyn-list swiper-initialized swiper-horizontal swiper-android swiper-backface-hidden"
+        class="home-product-swiper-wrapper w-dyn-list swiper-initialized swiper-horizontal swiper-android swiper-backface-hidd"
     >
         <div
             role="list"
@@ -109,3 +65,5 @@
         ></div>
     </div>
 </div>
+
+

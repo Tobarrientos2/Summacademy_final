@@ -30,7 +30,7 @@
                 class="container-rebrand no-padding-sides"
             >
                 <Two_ProductHP {obj}></Two_ProductHP>
-                <!-- <Two_Card2Prices obj={obj}></Two_Card2Prices> -->
+                <Two_Card2Prices obj={obj}></Two_Card2Prices>
 
                 <div class="add-to-cart-wrapper-bundles">
                     <div class="width-100 w-dyn-list">

@@ -17,6 +17,7 @@
     function handleClick(){
         sessionStorage.setItem('obj', JSON.stringify(obj))
         objStore.set(obj);
+        console.log("Clicked")
     }
 
   
@@ -28,7 +29,7 @@
                 style="width: 280px; margin-right: 16px;"
             >
                 <a   on:click={handleClick}
-                on:click={() => location.href = obj.v_slug}
+                on:click={() => window.location.href = obj.v_slug}
                     class="product-cards-wrapper height-auto w-inline-block"
                     ><div
                         id="products-cards"

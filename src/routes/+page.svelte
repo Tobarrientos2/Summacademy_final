@@ -3,4 +3,7 @@
 
 </script>
 
-<PageIndex></PageIndex>
+<main class="main-wrapper-rebrand homepage-overflow-none">
+
+	<PageIndex></PageIndex>
+</main>

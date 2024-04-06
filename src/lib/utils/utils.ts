@@ -151,3 +151,27 @@ console.log(getSomeBfImg());
 
 
 
+
+
+
+// Price
+
+export function filterByPrice(arr_obj_i){
+    let arr_obj_o = [];
+    let prices_arr_obj = _categorizeByPrice_arr_txt_o(arr);
+    for (let i = 0; i < prices_arr_obj.length; i++){
+        let price_txt = prices_arr_obj[i];
+        let price_obj = {price: price_txt, arr: []};
+        arr_obj_o.push(price_obj);
+
+        for (let j = 0; j < arr_obj_i.length; j++){
+            let obj = arr_obj_i[j];
+            if(obj.v_txt_1 == price_txt){
+                price_obj.arr.push(obj);
+            } 
+        } 
+    }
+
+    return arr_obj_o;
+    
+}
