@@ -8,7 +8,8 @@ import "../style.css"
 
 <svelte:head>
 	<!-- favicon -->
-	<link rel="icon" href="/tm/tm_logo.jpeg" />
+
+	<link href="https://www.skin.software/" rel="canonical">
 	<style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="google-site-verification" content="">

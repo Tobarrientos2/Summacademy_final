@@ -6,7 +6,7 @@
 
 <div
 id="w-node-_7e2ac3e0-eae8-de91-94e8-ea5151fd37bb-5875fff3"
-class="swiper-slide ingredients-home"
+class="swiper-slide ingredients-home s-slide"
 >
 <img
     src={obj.v_img}

@@ -7,7 +7,6 @@
         dispatch('categoryChanged', {
             x: obj
         })
-        console.log("Event Sent")
     } 
 </script>
 

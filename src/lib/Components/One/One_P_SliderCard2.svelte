@@ -17,7 +17,6 @@
     function handleClick(){
         sessionStorage.setItem('obj', JSON.stringify(obj))
         objStore.set(obj);
-        console.log("Clicked")
     }
 
   

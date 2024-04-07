@@ -13,7 +13,6 @@
 
 
     let category = filterSlugs(sc1.arr)
-    $: console.log(sc1)
   
   
 
@@ -21,7 +20,6 @@
  
     let x = ''
     export function eventReceived(e){
-        console.log(e.detail)
         x = e.detail
     } 
 
@@ -37,10 +35,10 @@
             class="flex-horizontal-rebrand home-product-categories-grid"
         >
 
-           <!-- <Two_CategoriesP></Two_CategoriesP> -->
+           <!-- <Two_CategoriesP></Two_CategoriesP>
            {#each category as obj}
            <Three_CategoriesB {obj} ></Three_CategoriesB>
-           {/each}
+           {/each} -->
         
           
            

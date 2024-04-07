@@ -4,5 +4,4 @@ export function byPrice(dispatch: (name: string, detail?: any) => void, num_i: n
     dispatch('categoryChanged', {
         x: num_i
     })
-    console.log("Event Sent")
 } 

@@ -106,9 +106,7 @@ export function getProductsBySlug(arr_obj_i: Array<object>, category_txt_i: stri
     } 
     return arr_o
 } 
-console.log(sc.sc1[0].arr);
 
-console.log(getProductsBySlug(sc.sc1[0].arr,"Core Etica"));
 
 // This function takes a string as "Core Etica" and returns "core-etica"
 export function denormalizeSlug(txt_i:string): string{
@@ -122,7 +120,6 @@ export function denormalizeSlug(txt_i:string): string{
     return txt_o
 } 
 
-console.log(denormalizeSlug("Core Etica"))
 
 
 
@@ -137,7 +134,6 @@ export function getSomeBfImg():string{
     for(let i = 0; i < arrayOfImages_arr.arr.length; i++){
         let img_txt = arrayOfImages_arr.arr[i].v_img;
         arr_p.push(img_txt);
-        console.log(img_txt)
 
         
     }
@@ -147,7 +143,6 @@ export function getSomeBfImg():string{
     return txt_o
 }  
 
-console.log(getSomeBfImg());
 
 
 
